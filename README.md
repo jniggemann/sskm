@@ -1,17 +1,26 @@
-# sskm
-Simple Ssh Key Manager for Linux (and possibly Unix)
+## sskm - Simple Ssh Key Manager for Linux (and possibly Unix)
 
-##### Looking for programmmers
+#### What is it?
+`sskm` will be a program to distribute public keys to hosts and to delete them.
+
+
+#### Looking for programmmers
 Right now there is nothing but the concept and some sketches. I'm not a good enough programmer to get this going and I don't have the time to become one. If you're interested in this project, just let me know and I'll add you as a collaborator.
 
-### Usecase
+#### Contents
+
+[Usecase](https://github.com/jniggemann/sskm#usecase)  
+[UI design proposal](https://github.com/jniggemann/sskm#ui-sketches-and-description-of-functionality)  
+[Licensing](https://github.com/jniggemann/sskm#licensing)
+
+#### Usecase
 Imagine a small network of Linux and Unix machines withthout centralized authentication instances like LDAP or NIS. This might be the case in a home network (NAS, mobile phones, notebooks, VCRs,...) or in small sports clubs. Setting up Kerberos would be overkill and you might not have root on all machines anyway. You log into the various devices and machines via **ssh** and would like to **facilitate the management of your public keys**.
 
-### UI sketches and description of functionality
+#### UI sketches and description of functionality
 
 The program consists of three tabbed panels "Manage Hosts", "Manage Keys" and "Key Distribution".
 
-#### Main Menu / Manage Hosts
+##### Main Menu / Manage Hosts
 
 ![Main Menu / Manage Hosts](https://raw.githubusercontent.com/jniggemann/sskm/master/UI_sketches/01_main.png)
 
@@ -31,7 +40,7 @@ These actions are available on right-clicking on a host entry. The context menu 
 ##### Manage Hosts: List keys
 ![Main Menu / Manage Hosts - list keys](https://raw.githubusercontent.com/jniggemann/sskm/master/UI_sketches/04_list_all_keys_on_host.png)
 
-#### Manage Keys
+##### Manage Keys
 
 ![Manage Keys](https://raw.githubusercontent.com/jniggemann/sskm/master/UI_sketches/05_manage_keys.png)
 Actions the user can perform (through the context menu):
@@ -44,3 +53,8 @@ Actions the user can perform (through the context menu):
 
  ##### Manage Keys: Add new key
 ![Manage Keys - add new key from file](https://raw.githubusercontent.com/jniggemann/sskm/master/UI_sketches/07_add_new_key.png)
+
+#### Licensing
+
+There's no code yet and I'm not sold on a special license. I propose GPLv2 for the code.
+All documentation is released under the CC-BY-NC-SA 3.0.
